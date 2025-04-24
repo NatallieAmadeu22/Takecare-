@@ -2,9 +2,13 @@
 Uma forma de aumentar seus cuidados com a pele e sua autoestima 
 
   GRUPO:
+  
 • @NatallieAmadeu22
+
 • @Hillarycacheiro
+
 • @Carolbcx
+
 • @LeoAlves007
 
   Orientadores:
