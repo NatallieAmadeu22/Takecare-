@@ -15,8 +15,10 @@
 }
 
 html {
-  
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
-  overflow: hidden;
+}
+
+.text-justify {
+  text-align: justify;
 }
