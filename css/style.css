@@ -1,3 +1,24 @@
-.fundoCorTal {
-  background-color: burlywood !important;
+:root {
+  --vanilla: #e2dbcb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+.text-justify {
+  text-align: justify;
 }

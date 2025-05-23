@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Self care</title>
     <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
@@ -12,9 +18,507 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body class="fundoCorTal">
-    <h1 class="text-light">Projeto Self Care</h1>
+  <body>
+    <header>
+      <div class="w-100" style="height: 60px; background: #584738"></div>
+      <div class="d-none d-md-block">
+        <div
+          class="d-flex justify-content-around align-items-center"
+          style="background-color: #f1eada; height: 130px"
+        >
+          <nav class="d-flex gap-5 justify-content-center align-items-center">
+            <div class="border border-1 border-black px-5 py-3">
+              <input
+                style="width: 260px"
+                class="bg-transparent"
+                type="text"
+                name=""
+                id=""
+                placeholder="O que você está procurando?"
+              />
+              <i class="bi bi-search"></i>
+            </div>
+            <img src="./img/IA.png" width="50px" alt="" />
+          </nav>
+          <img class="me-5" src="./img/Logo.png" width="250px" alt="" />
+
+          <div
+            class="fs-4 d-flex justify-content-center align-items-center ms-5 gap-4"
+          >
+            <i class="bi bi-person"></i>
+            <p class="fs-6 m-0">Olá, faça seu login ou cadastre-se.</p>
+            <i class="bi bi-heart"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-block d-md-none">
+        <div
+          class="d-flex flex-column justify-content-around"
+          style="background-color: #f1eada; height: 130px"
+        >
+          <div class="d-flex justify-content-around align-items-center gap-3">
+            <div class="d-flex gap-3">
+              <i class="bi bi-person fs-3"></i>
+              <img src="./img/IA.png" height="30px" alt="" />
+            </div>
+            <img src="./img/Logo.png" width="150px" alt="" />
+            <i class="bi bi-heart fs-3"></i>
+          </div>
+          <div
+            class="d-flex justify-content-around align-items-center align-self-center fs-5 w-75 border border-1 border-black py-2"
+          >
+            <input
+              style="width: 200px"
+              class="fs-6 bg-transparent"
+              type="text"
+              name=""
+              id=""
+              placeholder="O que você está procurando?"
+            />
+            <i class="bi bi-search"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <img class="w-100 d-none d-md-block" src="./img/banner.png" alt="" />
+
+      <div id="carouselExampleIndicators" class="d-md-none carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/3mocas.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/logoselfcare.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/mocasozinha.png" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <h1 class="text-center" style="color: #a08c6b; font-size: 1.4rem">
+        Experimente a sua melhor versão
+      </h1>
+
+      <div class="text-center my-4">
+        <button
+          class="px-5 py-3 border-0 rounded-pill fw-semibold"
+          style="background-color: #f4eee5; color: #a08c6b; font-size: 1.2rem"
+        >
+          VEJA A OPINIÃO DE QUEM JÁ COMPROU!
+        </button>
+      </div>
+
+      <div class="text-center">
+        <a
+          href="#"
+          class="text-decoration-none fw-semibold"
+          style="
+            border: 1px solid #a08c6b;
+            padding: 10px 25px;
+            color: #3c2e1e;
+            display: inline-block;
+          "
+        >
+          VER TODOS OS FEEDBACKS
+        </a>
+      </div>
+
+      <div class="container-fluid py-5" style="background-color: #565843">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Imagem -->
+            <div class="col-md-6 mb-4 mb-md-0">
+              <img
+                src="../img/moçacomserum.png"
+                alt="Mulher aplicando óleo facial"
+                class="img-fluid rounded"
+              />
+            </div>
+
+            <!-- Texto -->
+            <div class="col-md-6 text-white">
+              <h2 class="mb-4" style="font-weight: 600">#Sobre nós:</h2>
+              <p style="line-height: 1.8; font-size: 1.1rem">
+                Valorizamos a conexão com os clientes, criando uma comunidade
+                baseada em confiança e transparência. Mantemos um diálogo
+                aberto, escutando suas experiências e feedbacks para continuar
+                inovando e adaptando nossas ofertas. Ao escolher TakeCare, você
+                se junta a um movimento que acredita na ciência como base para o
+                cuidado eficaz e acessível da pele.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center my-5">
+        <h2 class="fw-light">
+          QUAL <span class="fw-bold fst-italic">TRATAMENTO</span> VOCÊ ESTÁ
+          <span class="fw-bold">BUSCANDO</span>?
+        </h2>
+
+        <div class="row justify-content-center mt-4">
+          <!-- Rosto -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mt-md-5 pt-md-5">
+            <a href="./rosto.html">
+              <div class="position-relative">
+                <img
+                  style="height: 200px; object-position: center -200px"
+                  src="../img/Rosto.png"
+                  class="d-block d-md-none img-fluid rounded-5 object-fit-cover w-100"
+                  alt="Rosto"
+                />
+                <img
+                  src="../img/Rosto.png"
+                  height="550px"
+                  class="d-none d-md-block rounded-5 w-100 object-fit-cover"
+                  alt="Rosto"
+                />
+                <span
+                  class="position-absolute top-0 start-50 translate-middle-x text-white fw-bold mt-3"
+                  style="letter-spacing: 1px"
+                  >ROSTO</span
+                >
+              </div>
+            </a>
+          </div>
+
+          <!-- Olhos -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div
+              class="position-relative rounded overflow-hidden"
+              style="border-radius: 30px"
+            >
+              <img
+                style="height: 200px; object-position: left -120px"
+                src="../img/Olhos.png"
+                class="d-block d-md-none img-fluid rounded-5 object-fit-cover w-100"
+                alt="Olhos"
+              />
+              <img
+                src="../img/OlhosDesktop.png"
+                height="550px"
+                class="d-none d-md-block rounded-5 w-100 object-fit-cover"
+                alt="Olhos"
+              />
+              <span
+                class="position-absolute top-0 start-50 translate-middle-x text-white fw-bold mt-3"
+                style="letter-spacing: 1px"
+                >OLHOS</span
+              >
+            </div>
+          </div>
+
+          <!-- Lábios -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mt-md-5 pt-md-5">
+            <div
+              class="position-relative rounded overflow-hidden"
+              style="border-radius: 30px"
+            >
+              <img
+                style="height: 200px; object-position: left -400px"
+                src="../img/Rosto.png"
+                class="d-block d-md-none img-fluid rounded-5 object-fit-cover w-100"
+                alt="Lábios"
+              />
+              <img
+                src="../img/Labios.png"
+                height="550px"
+                class="d-none d-md-block rounded-5 w-100 object-fit-cover"
+                alt="Lábios"
+              />
+              <span
+                class="position-absolute top-0 start-50 translate-middle-x text-white fw-bold mt-3"
+                style="letter-spacing: 1px"
+                >LÁBIOS</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container pt-5 pb-2 text-justify"
+        style="background-color: #444632"
+      >
+        <!-- Leonardo -->
+        <div class="row align-items-center bg-light rounded-4 p-4 mb-5">
+          <div class="col-md-6">
+            <h4 class="mt-3 fw-bold text-dark text-center fs-5">
+              CONHECENDO O LEONARDO
+            </h4>
+            <div class="col-md-6 text-center">
+              <img
+                src="../img/Leonardo.webp"
+                class="img-fluid"
+                style="max-height: 300px"
+                alt="Leonardo"
+              />
+            </div>
+            <div class="bg-white p-3 rounded-3 shadow-sm">
+              <span class="badge bg-secondary mb-2">#SelfCare</span>
+              <span class="badge bg-secondary mb-2">#Diretor de Mídias</span>
+              <p class="mb-0">
+                Olá! Sou Leonardo, parte da equipe que idealizou a TakeCare.
+                Estou aqui para compartilhar um pouco do que fazemos com muito
+                carinho.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Caroline -->
+        <div class="row align-items-center bg-light rounded-4 p-4 mb-5">
+          <div class="col-md-6">
+            <h4 class="mt-3 fw-bold text-dark text-center fs-5">
+              CONHECENDO A CAROLINE
+            </h4>
+            <div class="col-md-6 text-center">
+              <img
+                src="./img/Carol.webp"
+                class="img-fluid"
+                style="max-height: 300px"
+                alt="Caroline"
+              />
+            </div>
+            <div class="bg-white p-3 rounded-3 shadow-sm">
+              <span class="badge bg-secondary mb-2">#SelfCare</span>
+              <p class="mb-0">
+                Participo do desenvolvimento da TakeCare com foco em tornar
+                nossos produtos cada vez mais acessíveis e personalizados para
+                todos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hillary -->
+        <div class="row align-items-center bg-light rounded-4 p-4 mb-5">
+          <div class="col-md-6">
+            <h4 class="mt-3 fw-bold text-dark text-center fs-5">
+              CONHECENDO A HILLARY
+            </h4>
+            <div class="col-md-6 text-center">
+              <img
+                src="../img/Hillary.webp"
+                class="img-fluid"
+                style="max-height: 300px"
+                alt="Hillary"
+              />
+            </div>
+            <div class="bg-white p-3 rounded-3 shadow-sm">
+              <span class="badge bg-secondary mb-2">#SelfCare</span>
+              <p class="mb-0">
+                Gosto de ouvir nossos clientes e trazer essas opiniões para
+                nosso processo de inovação. A Hillary está sempre conectada com
+                você.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Myrella -->
+        <div class="row align-items-center bg-light rounded-4 p-4 mb-5">
+          <div class="col-md-6">
+            <h4 class="mt-3 fw-bold text-dark text-center fs-5">
+              CONHECENDO A MYRELLA
+            </h4>
+            <div class="col-md-6 text-center">
+              <img
+                src="../img/Myrella.webp"
+                class="img-fluid"
+                style="max-height: 300px"
+                alt="Myrella"
+              />
+            </div>
+            <div class="bg-white p-3 rounded-3 shadow-sm">
+              <span class="badge bg-secondary mb-2">#SelfCare</span>
+              <p class="mb-0">
+                Atuando no desenvolvimento dos nossos cosméticos, trago sempre
+                embasamento científico para oferecer eficácia e cuidado.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Natalie -->
+        <div class="row align-items-center bg-light rounded-4 p-4 mb-5">
+          <h4 class="mt-3 fw-bold text-dark text-center fs-5">
+            CONHECENDO A NATALLIE
+          </h4>
+          <div class="col-md-6 text-center">
+            <img
+              src="../img/Natalie.webp"
+              class="img-fluid"
+              style="max-height: 300px"
+              alt="Natalie"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="bg-white p-3 rounded-3 shadow-sm">
+              <span class="badge bg-secondary mb-2">#SelfCare</span>
+              <p class="mb-0">
+                Sou Natalie, e meu foco está em criar estratégias que levem a
+                marca TakeCare até você com clareza, empatia e propósito.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-white text-dark py-3">
+      <div class="d-none d-md-block">
+        <!-- Ícones sociais superiores -->
+        <div class="text-center mb-3">
+          <a href="#" class="text-dark me-3"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-dark me-3"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+
+        <!-- Benefícios -->
+        <div class="container mb-5">
+          <div class="row text-center gy-4">
+            <div class="col-md-3">
+              <i class="fas fa-lock fa-lg mb-2"></i>
+              <h6 class="fw-bold">COMPRA SEGURA</h6>
+              <p class="small">
+                Pagamentos processados via Rede, Mercado Pago e PagSeguro
+              </p>
+            </div>
+            <div class="col-md-3">
+              <i class="fas fa-truck-fast fa-lg mb-2"></i>
+              <h6 class="fw-bold">ENTREGA EXPRESSA</h6>
+              <p class="small">Mais de 90% dos envios por transportadora</p>
+            </div>
+            <div class="col-md-3">
+              <i class="fas fa-undo fa-lg mb-2"></i>
+              <h6 class="fw-bold">DEVOLUÇÃO GARANTIDA</h6>
+              <p class="small">Até 30 dias da data da entrega</p>
+            </div>
+            <div class="col-md-3">
+              <i class="fas fa-headset fa-lg mb-2"></i>
+              <h6 class="fw-bold">ATENDIMENTO PERSONALIZADO</h6>
+              <p class="small">Por chat, whatsapp, email ou redes sociais</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="text-center mb-4">
+          <h5 class="fw-bold">RECEBA NOSSAS NEWSLETTERS</h5>
+          <form class="d-flex justify-content-center mt-3">
+            <input
+              type="email"
+              class="form-control w-50 me-2"
+              placeholder="Digite seu e-mail"
+            />
+            <button class="btn btn-dark">ASSINE</button>
+          </form>
+        </div>
+
+        <!-- Pagamento, Segurança, Redes -->
+        <div class="container py-4">
+          <div class="row text-center text-md-start">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h6 class="fw-bold">Pagamento</h6>
+              <img
+                src="pagamento.png"
+                alt="Formas de pagamento"
+                class="img-fluid mt-2"
+                style="max-width: 90%"
+              />
+              <p class="small mt-2">
+                Até 10x sem juros no cartão. Confira as regras.
+              </p>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h6 class="fw-bold">Segurança</h6>
+              <img
+                src="seguranca.png"
+                alt="Selos de segurança"
+                class="img-fluid mt-2"
+                style="max-width: 90%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-md-4 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h6 class="fw-bold">Siga a empresa nas redes</h6>
+        <div class="mt-2 d-flex gap-3">
+          <a href="#" class="text-dark"
+            ><i class="fab fa-facebook fa-lg"></i
+          ></a>
+          <a href="#" class="text-dark"
+            ><i class="fab fa-instagram fa-lg"></i
+          ></a>
+          <a href="#" class="text-dark"><i class="fab fa-youtube fa-lg"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-tiktok fa-lg"></i></a>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
