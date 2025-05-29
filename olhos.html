@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Olhos - Projeto Self Care</title>
+    <title>Rosto - Projeto Self Care</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/olhos.css" />
+    <link rel="stylesheet" href="./css/rosto.css" />
 
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -92,8 +92,18 @@
       </div>
     </header>
 
+
+    <div class="imagem-container">
+      <img src="img/fotoOLHO.png" width="1000px" alt="Imagem de Olhos">
+    </div>
+    
+    <div class="imagem-container">
+      <img src="img/creamy.png" alt="Imagem de Rosto">
+    </div>
+
+
     <main class="container">
-      <h1>ROSTO</h1>
+      <h1></h1>
 
       <div class="row">
         <div class="col-4 bg-black" style="height: 200px"></div>
@@ -102,6 +112,7 @@
       </div>
     </main>
 
+    
     <footer class="bg-white text-dark py-3">
       <div class="d-none d-md-block">
         <!-- Ícones sociais superiores -->
@@ -209,4 +220,114 @@
       referrerpolicy="no-referrer"
     ></script>
   </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TEAKCARE - Produtos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .brand-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .product-card {
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 30px;
+      transition: box-shadow 0.3s;
+    }
+    .product-card:hover {
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .product-image {
+      max-height: 200px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container py-4">
+
+    <!-- Banner -->
+    <div class="mb-4">
+      <img src="img/CapaOlhos.png" alt="Banner Skincare" class="img-fluid w-100">
+    </div>
+
+    <!-- Seção Creamy, Cerave, La Roche -->
+    <div class="brand-title">Creamy | CeraVe | La Roche-Posay</div>
+    <div class="row text-center mt-4">
+      <div class="col-md-4 product-card">
+        <img src="img/produtodacreamy.png" alt="Creamy" class="img-fluid product-image mb-2">
+        <p class="mb-1">R$ 98,90</p>
+        <small>Em até 2x R$ 22,96 sem juros</small>
+      </div>
+      <div class="col-md-4 product-card">
+        <img src="img/2imagem.png" alt="CeraVe" class="img-fluid product-image mb-2">
+        <p class="mb-1">R$ 84,90</p>
+        <small>Em até 2x R$ 42,45 sem juros</small>
+      </div>
+      <div class="col-md-4 product-card">
+        <img src="img/3imagem.png" alt="La Roche-Posay" class="img-fluid product-image mb-2">
+        <p class="mb-1">R$ 140,90</p>
+        <small>Ou até 4x R$ 35,22 sem juros</small>
+      </div>
+    </div>
+
+    <!-- Seção Océane -->
+    <div class="brand-title">Océane</div>
+    <div class="row text-center mt-4">
+      <div class="col-md-3 product-card">
+        <img src="URL_OCEANE_1" alt="Océane Eye Cream" class="img-fluid product-image mb-2">
+        <p class="mb-1">R$ 37,90</p>
+        <small>Creme para área dos olhos com Chá Verde</small>
+      </div>
+      <div class="col-md-3 product-card">
+        <img src="URL_OCEANE_2" alt="Océane Vitamina C" class="img-fluid product-image mb-2">
+        <p class="mb-1">R$ 37,90</p>
+        <small>Com Vitamina C</small>
+      </div>
+      <div class="col-md-3 product-card">
+        <img src="URL_OCEANE_3" alt="Océane Niacinamida" class="img-fluid product-image mb-2">
+        <p class="mb-1">R$ 37,90</p>
+        <small>Com Niacinamida</small>
+      </div>
+      <div class="col-md-3 product-card">
+        <img src="URL_OCEANE_4" alt="Océane Colágeno" class="img-fluid product-image mb-2">
+        <p class="mb-1">R$ 47,90</p>
+        <small>Com Colágeno</small>
+      </div>
+    </div>
+
+    <!-- Seção Eucerin, Vult, Ricca -->
+    <div class="brand-title">Eucerin | Vult | Ricca</div>
+    <div class="row text-center mt-4">
+      <div class="col-md-4 product-card">
+        <img src="URL_EUCERIN" alt="Eucerin" class="img-fluid product-image mb-2">
+        <p class="mb-1">R$ 106,90</p>
+        <small>Em até 4x de R$ 26,72 sem juros</small>
+      </div>
+      <div class="col-md-4 product-card">
+        <img src="URL_VULT" alt="Vult" class="img-fluid product-image mb-2">
+        <p class="mb-1">R$ 74,90</p>
+        <small>Em até 2x R$ 37,45 sem juros</small>
+      </div>
+      <div class="col-md-4 product-card">
+        <img src="URL_RICCA" alt="Ricca" class="img-fluid product-image mb-2">
+        <p class="mb-1">R$ 69,90</p>
+        <small>Em até 2x R$ 34,95 sem juros</small>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
