@@ -18,3 +18,8 @@
     max-height: 200px;
     object-fit: contain;
   }
+
+  .divBanner{
+    height: 300px;
+    max-height: 300px !important;
+  }
