@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro - SelfCare</title>
+  <link rel="stylesheet" href="./css/cadastro.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #c89d6c;
+      color: #4b3a1e;
+    }
+    .form-control {
+      background-color: #f1dec6;
+      border: none;
+      border-radius: 2rem;
+      padding: 0.75rem 1.5rem;
+    }
+    .form-control:focus {
+      box-shadow: none;
+    }
+    .btn-custom {
+      background-color: #5d2e00;
+      color: #fff;
+      border-radius: 2rem;
+      padding: 0.5rem 2rem;
+    }
+    .contact-info i {
+      margin-right: 8px;
+    }
+    .input-row .form-control {
+      width: 100%;
+    }
+    .input-row {
+      gap: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Voltar -->
+  <div class="p-3">
+    <i class="bi bi-chevron-left fs-3"></i>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="w-100" style="max-width: 800px;">
+      <div class="d-flex justify-content-between align-items-start">
+        <!-- Formulário -->
+        <div class="flex-grow-1 me-5">
+          <h3 class="fw-bold text-center mb-4">CADASTRE-SE</h3>
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Nome</label>
+              <input type="text" class="form-control" placeholder="Digite seu nome" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Digite seu email" />
+            </div>
+            <div class="d-flex input-row mb-3">
+              <div class="flex-fill">
+                <label class="form-label">Senha</label>
+                <input type="password" class="form-control" />
+              </div>
+              <div class="flex-fill">
+                <label class="form-label">Confirmar senha</label>
+                <input type="password" class="form-control" />
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-custom">Sign up</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contato -->
+        <div class="contact-info text-end">
+          <p><i class="bi bi-telephone-fill"></i>3654-3478</p>
+          <p><i class="bi bi-envelope-fill"></i>@SelCare.com</p>
+          <p><i class="bi bi-globe2"></i>www.SelfCare.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

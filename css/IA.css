@@ -1,0 +1,24 @@
+
+    body {
+      background-color: #d4b89d;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+    .top-bar {
+      padding: 1rem;
+    }
+    .input-card {
+      background-color: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      max-width: 600px;
+      width: 100%;
+    }
+    .icon-btn {
+      border-radius: 2rem;
+      font-size: 0.9rem;
+    }
+  
